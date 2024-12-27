@@ -1,0 +1,117 @@
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f0f0; /* Light gray background */  
+    display: flex;  
+    justify-content: center; /* Center content horizontally */  
+    align-items: center; /* Center content vertically */  
+    height: 100vh; /* Full viewport height */  
+    margin: 0; /* No margins */  
+}  
+
+h1 {  
+    color: #333; /* Dark gray color for the heading */  
+}  
+
+form {  
+    background: white; /* White background for the form */  
+    padding: 20px; /* Padding inside the form */  
+    border-radius: 5px; /* Rounded corners */  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+    width: 300px; /* Fixed width for the form */  
+}  
+
+input[type="text"],  
+input[type="password"] {  
+    width: 100%; /* Full width input fields */  
+    padding: 10px; /* Padding inside input fields */  
+    margin: 10px 0; /* Margin above and below input fields */  
+    border: 1px solid #ccc; /* Light gray border */  
+    border-radius: 4px; /* Rounded corners */  
+    box-sizing: border-box; /* Include padding and border in width */  
+}  
+
+button {  
+    width: 100%; /* Full width button */  
+    padding: 10px; /* Padding inside the button */  
+    background-color: #4CAF50; /* Green background for the button */  
+    color: white; /* White text color */  
+    border: none; /* No border for the button */  
+    border-radius: 4px; /* Rounded corners */  
+    font-size: 16px; /* Font size */  
+    cursor: pointer; /* Hand cursor on hover */  
+}  
+
+button:hover {  
+    background-color: #45a049; /* Darker green on hover */  
+}  
+
+a {  
+    display: block; /* Block element for the link */  
+    margin-top: 10px; /* Margin above the link */  
+    text-align: center; /* Center the link text */  
+    color: #007BFF; /* Blue color for the link */  
+    text-decoration: none; /* Remove underline */  
+}  
+
+a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}
+
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f0f0;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+}  
+
+h1 {  
+    color: #333;  
+}  
+
+form {  
+    background: white;  
+    padding: 20px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+    width: 300px;  
+}  
+
+input[type="text"],  
+input[type="password"] {  
+    width: 100%;  
+    padding: 10px;  
+    margin: 10px 0;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+    box-sizing: border-box;  
+}  
+
+button {  
+    width: 100%;  
+    padding: 10px;  
+    background-color: #4CAF50;  
+    color: white;  
+    border: none;  
+    border-radius: 4px;  
+    font-size: 16px;  
+    cursor: pointer;  
+}  
+
+button:hover {  
+    background-color: #45a049;  
+}  
+
+a {  
+    display: block;  
+    margin-top: 10px;  
+    text-align: center;  
+    color: #007BFF;  
+    text-decoration: none;  
+}  
+
+a:hover {  
+    text-decoration: underline;  
+}

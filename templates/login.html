@@ -1,0 +1,84 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Login</title>  
+</head> 
+<style>
+/* General body styles */  
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    margin: 0;  
+    padding: 20px;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center; /* Centers the content horizontally */  
+}  
+
+/* Styles for the heading */  
+h1 {  
+    color: #333;  
+    margin-bottom: 20px;  
+}  
+
+/* Form styles */  
+form {  
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    width: 300px;  
+    display: flex;  
+    flex-direction: column;  
+}  
+
+/* Input styles */  
+input[type="text"],  
+input[type="password"] {  
+    padding: 10px;  
+    margin: 10px 0; /* Margins for spacing between inputs */  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    font-size: 16px;  
+}  
+
+/* Button styles */  
+button {  
+    padding: 10px;  
+    background-color: #007BFF; /* Primary button color */  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 16px;  
+    transition: background-color 0.3s; /* Transition effect on hover */  
+}  
+
+button:hover {  
+    background-color: #0056b3; /* Darker shade on hover */  
+}  
+
+/* Link styles */  
+a {  
+    color: #007BFF; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+    margin-top: 10px; /* Space above the link */  
+    font-size: 14px;  
+}  
+
+a:hover {  
+    text-decoration: underline; /* Underline on hover for effect */  
+}
+
+</style> 
+<body>  
+    <h1>Login</h1>  
+    <form method="POST">  
+        <input type="text" name="name" placeholder="Username" required>  
+        <input type="password" name="password" placeholder="Password" required>  
+        <button type="submit">Login</button>  
+    </form>  
+    <a href="/register">Create an account</a>  
+</body>  
+</html>

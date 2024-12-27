@@ -1,0 +1,116 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->  
+    <title>Index</title>  
+    <style>  
+        /* General body styles */  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f9f9f9;  
+            margin: 0;  
+            padding: 20px;  
+            text-align: center; /* Center-aligns content */  
+        }  
+
+        /* Styles for the heading */  
+        h1 {  
+            color: #333;  
+            margin-bottom: 20px;  
+            font-size: 2.5em; /* Large font size for the heading */  
+        }  
+
+        /* Paragraph styles */  
+        p {  
+            color: #555;  
+            font-size: 1.2em; /* Slightly larger font for paragraph */  
+        }  
+
+        /* Navbar styles */  
+        .navbar {  
+            display: flex;  
+            justify-content: center; /* Center the navbar items */  
+         
+            background-color: black;  
+            list-style: none;  
+            margin: 0;  
+        }  
+
+        .navbar li {  
+            font-size: 22px;  
+            color: aqua;  
+            margin: 0 30px;  
+            cursor: pointer;  
+        }  
+
+        /* Main action links styles */  
+    
+        /* Link styles */  
+        a {  
+            display: inline-block;  
+            margin: 10px;  
+            padding: 10px 5px;  
+            background-color: #007BFF;  
+            color: white;  
+            border-radius: 5px;  
+            text-decoration: none;  
+            font-size: 1em;  
+            transition: background-color 0.3s;  
+        }  
+
+        /* Link hover effect */  
+        a:hover {  
+            background-color: #0056b3; /* Darker shade on hover */  
+        } 
+        @media (max-width: 768px) {  
+            h1 {  
+                font-size: 2em; /* Smaller heading on mobile */  
+            }  
+
+            p {  
+                font-size: 1em; /* Smaller paragraph font */  
+            }  
+
+            .navbar li {  
+                font-size: 18px; /* Smaller font size for navbar items */  
+                margin: 0 10px; /* Reduced margin for smaller screens */  
+            }  
+        }  
+
+        @media (max-width: 480px) {  
+            .navbar {  
+                flex-direction: column; /* Stack navbar items vertically on very small screens */  
+                align-items: center; /* Center items */  
+            }  
+            a {  
+                padding: 10px 20px; /* Increase padding for better touch targets */  
+            }  
+        }  
+
+    </style>  
+</head>  
+<body>  
+   
+    <ul class="navbar">  
+        <li style="background-color: crimson; color:white"><a style="background-color: rgb(0, 26, 255); color:white" href="">Home</a></li>  
+        <li style="background-color: rgb(8, 4, 250); color:white"><a style="background-color: rgb(21, 255, 0); color:white" href="">Contact</a></li>  
+        <li  style="background-color: rgb(24, 255, 3); color:white"><a style="background-color: rgb(12, 12, 12); color:white" href="">Products</a></li>  
+        <li  style="background-color: rgb(255, 0, 221); color:white"><a style="background-color: rgb(255, 8, 0); color:white"href="">About</a></li>  
+
+   
+
+    {% if name %}  
+        <p>Hello, {{ name }}</p>  
+        <a href="/logout">Logout</a>  
+    {% else %}  
+      
+           
+            <li><a href="/login">Login</a></li>
+           <li><a href="/register">Register</a></li> 
+        </ul>  
+       
+    {% endif %}  
+    <h1>Welcome {{ name or 'Guest' }}</h1>  
+</body>  
+</html>
