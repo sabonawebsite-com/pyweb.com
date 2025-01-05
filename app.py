@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash  
 
 app = Flask(__name__)  
+STUDENTS=[{'name':'Sabona Marara','Python':'A','Java':'B'},{'name':'Gadisaa','Python':'B','Java':'A'},{'name':'Etafa','Python':'A','Java':'B'}]
 
 # Configuration for session  
 app.config["SESSION_PERMANENT"] = False  
@@ -39,7 +40,7 @@ def login():
         
         if user and check_password_hash(user.password, password):  
             session["name"] = name  
-            return redirect('/')  
+            return render_template('exampont.html',students=STUDENTS)  
         else:  
             flash("Invalid username or password", "danger")  
     

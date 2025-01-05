@@ -91,14 +91,14 @@
     </style>  
 </head>  
 <body>  
-   
+  
     <ul class="navbar">  
         <li style="background-color: crimson; color:white"><a style="background-color: rgb(0, 26, 255); color:white" href="">Home</a></li>  
         <li style="background-color: rgb(8, 4, 250); color:white"><a style="background-color: rgb(21, 255, 0); color:white" href="">Contact</a></li>  
-        <li  style="background-color: rgb(24, 255, 3); color:white"><a style="background-color: rgb(12, 12, 12); color:white" href="">Products</a></li>  
+  
         <li  style="background-color: rgb(255, 0, 221); color:white"><a style="background-color: rgb(255, 8, 0); color:white"href="">About</a></li>  
-
-   
+ 
+      
 
     {% if name %}  
         <p>Hello, {{ name }}</p>  
@@ -112,5 +112,6 @@
        
     {% endif %}  
     <h1>Welcome {{ name or 'Guest' }}</h1>  
+    <img src="/static/bru_wall.png" alt="">
 </body>  
 </html>
